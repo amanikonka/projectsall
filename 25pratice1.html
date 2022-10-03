@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        margin-top: 10px;
+        }
+        .main{
+            border: 1px solid black;
+            height: 40%;
+            width :60%;
+            padding: 10px;
+        }
+        .question{
+            font-size: x-large;
+            display: inline;
+        }
+        .button{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    <div class="question">Ask question?</div>
+    <div class="button">
+        <button id="show" onclick="show()">+</button>
+        <button id="hide" onclick="hide()">-</button>
+    </div>
+    </div>
+    <div class="answer" id="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at tempora, perferendis nesciunt quas modi expedita explicabo quis, consectetur, nam blanditiis! Architecto, explicabo labore! Nulla recusandae provident officiis dolorum ipsam.
+    </div>
+</div>
+<script>
+    function show(){
+        let answer = document.getElementById('para')
+        answer.style.display = 'block'
+    }
+    function hide(){
+        let answer = document.getElementById('para')
+        answer.style.display = 'none'
+    }
+   
+
+
+</script>
+</body>
+</html>

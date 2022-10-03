@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            display:inline-block;
+        }
+        .border{
+            border:solid ;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="border">
+    <div>
+        <button class="home" onclick="change()">home</button>
+        <button class="page" onclick="change()">page</button>
+        <button class="link" onclick="change()">link</button>
+    </div>
+    <br><br>
+    <div class="home" id="amani1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium distinctio repellendus ut sapiente rerum molestiae cumque dolor repellat nobis dolorem, quidem perspiciatis tempora modi quae rem at nam? Sit!
+</div>
+<div class="page" id="page1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium distinctio repellendus ut sapiente rerum molestiae cumque dolor repellat nobis dolorem, quidem perspiciatis tempora modi quae rem at nam? Sit!
+</div>
+<div class="link" id="link1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium distinctio repellendus ut sapiente rerum molestiae cumque dolor repellat nobis dolorem, quidem perspiciatis tempora modi quae rem at nam? Sit!
+</div>
+</div>
+<script>
+    function change(){
+        let home = document.getElementsById('amani1')
+        home.style.display = 'home'
+        let page = document.getElementsById('page1')
+        page.style.display = 'none'
+        let link = document.getElementsById('link1')
+        link.style.display = 'none'
+        
+    }
+</script>
+</body>
+</html>

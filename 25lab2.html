@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+        .heading {
+            display: inline-block;
+            font-size: 1.5em;
+        }
+
+        .action-button {
+            float: right;
+        }
+
+        .question-container {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        .body {
+            margin-top: 10px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="question-container">
+        <div class="header">
+            <div class="heading">Do I have to allow the use of cookies? </div>
+            <div class="action-button">
+                <button id="add-button" onclick="showBody()">+</button>
+                <button id="hide-button" onclick="hideBody()">-</button>
+                
+            </div>
+        </div>
+        <div class="body" id="question-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quos autem, magni eaque doloribus obcaecati enim possimus laudantium error nam perferendis. Architecto error expedita nisi iusto quod blanditiis recusandae, mollitia harum facilis culpa nostrum eaque ipsum? Iure magni veniam deserunt earum officia aspernatur necessitatibus ipsa minus inventore est, id consequatur!
+        </div>
+    </div>
+
+    <script>
+        
+        function showBody(){
+            // get body element from html and change the display property to block
+            let body = document.getElementById('question-body');
+            body.style.display = 'block'
+            let addButton = document.getElementById('add-button')
+            addButton.style.display = 'none'
+            
+
+        }
+        
+        function hideBody(){
+            // get body element from html and change the display property to none
+            let body = document.getElementById('question-body');
+            body.style.display = 'none'
+        }
+
+    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color:red;
+        }
+        .blue{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="whatToDo()">click and see</button>
+    <button onclick="whatToDoNow()">click </button>
+
+    <div id="body"></div>
+    
+    <script>
+        function whatToDo(){
+            let body = document.getElementById('body');
+          ///  body.innerHTML = "amani" //replace all previous content after clicking button
+            body.innerHTML += "<span class='red'>devansh</span><br>";
+        }
+        function whatToDoNow(){
+            let body = document.getElementById('body');
+           /// body.innerHTML = "handed" //replace all previous content after clicking button
+            body.innerHTML += "<span class='blue'>saathvika</span><br>";       
+         }
+    </script>
+
+</body>
+</html>

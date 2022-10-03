@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: 1px,solid,black;
+            border: solid;
+            padding: 10px;
+            height: 40%;
+            width:40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tab-header">
+<div class="tab-button">
+    <button class="tab1" onclick="tab1()">tab1</button>
+    <button class="tab2" onclick="tab2()">tab2</button>
+    <button class="tab3" onclick="tab3()">tab3</button>
+</div>
+<br><br>
+<div class="tab-body">
+<div class="body1" id="tabbody1">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ex provident molestiae, praesentium iste, iure, aut voluptatibus nesciunt distinctio eaque a est tempore excepturi hic. Ut, vitae in? Distinctio, eveniet.
+</div>
+<div class="body2" id="tabbody2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ipsum molestias, placeat, eaque dicta ullam cumque voluptate laborum quisquam reiciendis iure blanditiis, sequi fugit corporis quis? Possimus fuga amet deserunt.</div>
+</div>
+<div class="body3" id="tabbody3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reiciendis nisi, magnam repellat minus quo sapiente qui sequi corporis natus aspernatur illum soluta autem nobis doloribus molestias saepe enim maxime.</div>
+        </div>
+    </div>
+    <script>
+        function  tab1(){
+            //display only tab1
+            let body1 = document.getElementById('tabbody1')
+            body1.style.display = 'block'
+            let body2 = document.getElementById('tabbody2')
+            body2.style.display = 'none'
+            let body3 = document.getElementById('tabbody3')
+            body3.style.display = 'none'
+        }
+        function  tab2(){
+            //display only tab2
+            let body2 = document.getElementById('tabbody2')
+            body2.style.display = 'block'
+            let body1 = document.getElementById('tabbody1')
+            body1.style.display = 'none'
+            let body3 = document.getElementById('tabbody3')
+            body3.style.display = 'none'
+        }
+        function  tab3(){
+            //display only tab3
+            let body3 = document.getElementById('tabbody3')
+            body3.style.display = 'block'
+            let body1 = document.getElementById('tabbody1')
+            body1.style.display = 'none'
+            let body2 = document.getElementById('tabbody2')
+            body2.style.display = 'none'
+        }
+    </script>
+    
+</body>
+</html>
